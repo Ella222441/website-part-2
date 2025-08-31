@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery - Food Lovers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <header>
+        <h1>Food Gallery</h1>
+        <p>Explore our collection of delicious food images.</p>
+    </header>
+
+    <section class="gallery">
+        <!-- Add your food images here -->
+        <div class="gallery-item"><img src="egusi.jpg" alt="Food 1"></div>
+        <div class="gallery-item"><img src="jollofrice.jpg" alt="Food 2"></div>
+        <div class="gallery-item"><img src="suya.jpg" alt="Food 3"></div>
+        <div class="gallery-item"><img src="yam.jpg" alt="Food 4"></div>
+        <div class="gallery-item"><img src="bread.jpg" alt="Food 5"></div>
+        <div class="gallery-item"><img src="chonchin.jpg" alt="Food 6"></div>
+    </section>
+
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data);
+    </script>
+</body>
+
+</html>

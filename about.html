@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Food Lovers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <header>
+        <h1>About Us</h1>
+        <p>Learn more about our love for food and our mission.</p>
+    </header>
+
+    <section class="content">
+        <h2>Who We Are</h2>
+        <p>Food Lovers is a community of passionate chefs and foodies dedicated to sharing delicious recipes, tips, and
+            stories from kitchens around the world.</p>
+    </section>
+
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data);
+    </script>
+</body>
+
+</html>
